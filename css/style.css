@@ -10,3 +10,96 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 } */
+
+
+
+
+.grey{
+   background-color: #DBDBD2;
+   height: 85%;
+}
+.lightgreen{
+    height: 15%;
+    background-color: #009688;
+}
+.box{
+    width: 80%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+}
+.img-header{
+    width: 60px;
+    height: 60px;
+}
+img{
+    width: 100%;    
+}
+.text-l{
+    color: darkgray;
+}
+.bg-header{
+    background-color: #D5D5D5;
+    height: 100px;
+}
+.bell-icon{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    line-height: 60px;
+}
+.bg-lightblue{
+    background-color: #8EDAFC;
+}
+.bg-light-bot{
+background-color: #DFDAD7;
+}
+.color-lightblue{
+    color: #8EDAFC;
+}
+.search-button{
+    background-color: white;
+    border:1px solid #D5D5D5;
+    color: #D5D5D5;
+    width: 10%;
+}
+
+.search-input{
+    width: 90%;
+    border:1px solid #D5D5D5;
+}
+.bg-special{
+    background-image: url(../img/mine.jpg);
+}
+.mess-green{
+    background-color: green;
+    height: 10px;
+    width: 50%;
+    line-height: 10px;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 50%;
+    margin-bottom: 10px;
+    
+}
+
+.mess-white{
+    background-color: white;
+    height: 10px;
+    width: 50%;
+    line-height: 10px;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+
+/* height */
+.altezza-scrivi{
+    height: 50px;
+}
+.altezza{
+    height: calc(100% - 150px);
+}
