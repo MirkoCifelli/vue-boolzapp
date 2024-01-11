@@ -173,14 +173,7 @@ createApp({
         };
     },
     methods: {
-        nextChat() {
-            if (this.counter< this.contacts.length-1) {
-                this.counter++;
-            }
-            else{
-                this.counter=0;
-            }
-        }
+        
     }
   // Monto l'istanza di Vue in pagina
 }).mount('#app');
