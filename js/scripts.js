@@ -5,6 +5,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            counter:0,
             contacts: [
                 {
                     name: 'Michele',
@@ -172,7 +173,14 @@ createApp({
         };
     },
     methods: {
-
+        nextChat() {
+            if (this.counter< this.contacts.length-1) {
+                this.counter++;
+            }
+            else{
+                this.counter=0;
+            }
+        }
     }
   // Monto l'istanza di Vue in pagina
 }).mount('#app');

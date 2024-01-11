@@ -65,7 +65,7 @@
                         <div class="col-12 overflow-y-auto altezza-side">
                             <div>
                                 <ul class="list-unstyled ">
-                                    <li v-for="(item, i) in contacts" class="mb-2 d-flex">
+                                    <li v-for="(item, i) in contacts" class="mb-2 d-flex" :class="counter == i? 'active': ''" @click="nextChat">
                                         <div class="row">
                                             <div class="col-2">
                                                 <img :src="item.avatar" class="rounded-circle " alt="">
@@ -98,7 +98,7 @@
                                 </div>
                                 <div class="p-2 img-info">
                                     <h5>Michele</h5>
-                                <span>Ultimo accesso oggi alle 12</span>
+                                <span>Ultimo accesso oggi alle 12:00</span>
                                 </div>
                                 <div class="ms-auto p-2">
                                     <a href="#"><i class="fas fa-search me-3 text-l fs-3 "></i></a>

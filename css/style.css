@@ -123,9 +123,13 @@ background-color: #DFDAD7;
 
 .mess-size{
     font-size: 12px;
-    color: #D5D5D5;
+    color: darkgray;
 }
 .data-size{
     font-size: 12px;
-    color: #D5D5D5;
+    color: darkgray;
+}
+.active{
+    background-color: #D5D5D5;
+    opacity: 1;
 }
