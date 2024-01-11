@@ -79,24 +79,25 @@ background-color: #DFDAD7;
     line-height: 10px;
     border-radius: 10px;
     padding: 20px;
-    /* margin-left: 50%; */
     margin-bottom: 10px;
     
 }
 
 .mess{  
     /* height: 10px; */
-    width: 50%;
+    width: 30%;
     line-height: 10px;
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px 10px;
     margin-bottom: 10px;
+    position: relative;
 }
 .white{
     background-color: white;
+    margin-left: 8%;
 }
 .green{
-    background-color: green;
+    background-color: #D5F9BA;
     margin-left: 50%;
 }
 
@@ -113,4 +114,18 @@ background-color: #DFDAD7;
 }
 .altezza-side{
     height: calc(100% - 230px);
+}
+.end{
+    bottom: 10px;
+    right: 10px;
+}
+
+
+.mess-size{
+    font-size: 12px;
+    color: #D5D5D5;
+}
+.data-size{
+    font-size: 12px;
+    color: #D5D5D5;
 }
