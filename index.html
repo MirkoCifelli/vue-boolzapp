@@ -94,7 +94,8 @@
                         <div class="col-12 bg-header p-2">
                             <div class="d-flex p-1 align-items-center ">
                                 <div class="p-2 img-header">
-                                    <img src="./img/avatar_1.jpg" class="rounded-circle " alt="Michele">
+                                    <img src="./img/avatar_1.jpg" 
+                                    class="rounded-circle " alt="Michele">
                                 </div>
                                 <div class="p-2 img-info">
                                     <h5>{{contacts[counter].name}}</h5>
@@ -108,11 +109,14 @@
                             </div>
                         </div>
                         <div class="col-12 bg-special overflow-y-auto altezza pt-5">
-                            <div class="mess green" v-for="(text,i) in contacts[counter].messages">
-                                {{text.message}}
+                            <div class="mess" v-for="(text,i) in contacts[counter].messages" :class="contacts[counter].messages[i].status=='sent' ? 'green':'white'">
+                                <div>
+                                    {{text.message}}  
+                                </div>
+                                <!-- {{text.message}} -->
                                
-                               <div class="position-absolute end  text-l">
-                                15:30
+                               <div class="position-absolute end text-l">
+                                {{text.date}}
                                </div>
                             </div>
                             <!-- <div class="mess green">
