@@ -91,6 +91,7 @@ background-color: #DFDAD7;
     padding: 20px 10px;
     margin-bottom: 10px;
     position: relative;
+    word-wrap: break-word;
 }
 .white{
     background-color: white;
