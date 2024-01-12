@@ -41,6 +41,10 @@ img{
     color: darkgray;
     /* font-size: 10px; */
 }
+.text-ldate{
+    color: darkgray;
+    font-size: 11px; 
+}
 .bg-header{
     background-color: #D5D5D5;
     height: 100px;
