@@ -185,6 +185,15 @@ createApp({
                this.newMessage = '';
                console.log( this.contacts[this.counter].messages)
             }
+            let response;
+            response= setTimeout(()=>{
+                let newMessage2={
+                    date: '10/01/2020 16:15:22',
+                    message : 'ok',
+                    status:'received',
+                };
+                this.contacts[this.counter].messages.push(newMessage2)
+            },1000);
         }
     }
   // Monto l'istanza di Vue in pagina
