@@ -183,7 +183,7 @@ createApp({
                };
                this.contacts[this.counter].messages.push(newMessage2)
                this.newMessage = '';
-               console.log( this.contacts[this.counter].messages)
+            //    console.log( this.contacts[this.counter].messages)
             }
             let response;
             response= setTimeout(()=>{
@@ -194,7 +194,22 @@ createApp({
                 };
                 this.contacts[this.counter].messages.push(newMessage2)
             },1000);
-        }
+        },
+        search(){
+           
+            for (let i = 0; i < this.contacts.length; i++) {
+                const name = this.contacts[i].name.toLowerCase();
+                if(name.includes(this.newFilter)){
+                this.contacts[i].visible= true
+                }
+                else{
+                    this.contacts[i].visible= false
+                }
+            }
+        },
+        
     }
   // Monto l'istanza di Vue in pagina
 }).mount('#app');
+
+
