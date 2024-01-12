@@ -132,3 +132,7 @@ background-color: #DFDAD7;
     background-color: #D5D5D5;
     opacity: 1;
 }
+li:hover{
+    background-color: #D5D5D5;
+    opacity: 1;
+}

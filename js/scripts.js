@@ -5,6 +5,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            newMessage:'',
             counter:0,
             contacts: [
                 {
@@ -173,7 +174,18 @@ createApp({
         };
     },
     methods: {
-        
+        newChat(){
+            if (this.newMessage.trim().length > 0) {
+               let newMessage2 = {
+                    date: '10/01/2020 16:15:22',
+                    message : this.newMessage,
+                    status:'sent',
+               };
+               this.contacts[this.counter].messages.push(newMessage2)
+               this.newMessage = '';
+               console.log( this.contacts[this.counter].messages)
+            }
+        }
     }
   // Monto l'istanza di Vue in pagina
 }).mount('#app');
