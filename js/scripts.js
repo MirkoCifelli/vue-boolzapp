@@ -5,6 +5,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            newFilter:'',
             newMessage:'',
             counter:0,
             contacts: [
