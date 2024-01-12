@@ -108,24 +108,25 @@
                             </div>
                         </div>
                         <div class="col-12 bg-special overflow-y-auto altezza pt-5">
-                            <div class="mess green ">
-                               Hai portato a spasso il cane?
+                            <div class="mess green" v-for="(text,i) in contacts[counter].messages">
+                                {{text.message}}
+                               
                                <div class="position-absolute end  text-l">
                                 15:30
                                </div>
                             </div>
-                            <div class="mess green">
+                            <!-- <div class="mess green">
                                 Ricordati di stendere i panni
                                 <div class="position-absolute end  text-l">
                                     15:50
-                                   </div>
+                                </div>
                             </div>
                             <div class="mess white">
                                 Tutto fatto!
                                 <div class="position-absolute end  text-l">
                                     16:15
-                                   </div>
-                            </div> 
+                                </div>
+                            </div>       -->
 
                         </div>
                         <div class="col-12 bg-light-bot ">
