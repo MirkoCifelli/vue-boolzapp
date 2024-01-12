@@ -39,7 +39,7 @@ img{
 }
 .text-l{
     color: darkgray;
-    font-size: 10px;
+    /* font-size: 10px; */
 }
 .bg-header{
     background-color: #D5D5D5;
