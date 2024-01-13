@@ -29,7 +29,7 @@
                         <div class="col-4 h-100 ">
                             <div class="row h-100 ">
                                 <div class="col-12 bg-header p-2">
-                                    <div class="d-flex p-1 align-items-center ">
+                                    <div class="d-flex p-3 align-items-center ">
                                         <div class="p-2 img-header">
                                             <img src="./img/avatar_io.jpg" class="rounded-circle " alt="Sofia">
                                         </div>
@@ -69,7 +69,7 @@
                                     <li v-for="(item, i) in contacts" class="mb-2 d-flex" 
                                        :class="{active :counter==i}"
                                        @click="counter=i">
-                                        <div class="row" v-if='item.visible == true'>
+                                        <div class="row align-items-center" v-if='item.visible == true'>
                                             <div class="col-2">
                                                 <img :src="item.avatar" class="rounded-circle " alt="">
                                             </div>
