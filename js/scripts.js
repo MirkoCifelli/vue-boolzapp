@@ -208,7 +208,10 @@ createApp({
                 }
             }
         },
-        
+        deleteMessage(i){
+            this.contacts[this.counter].messages.splice(i,1)
+
+        }
     }
   // Monto l'istanza di Vue in pagina
 }).mount('#app');
