@@ -178,7 +178,7 @@ createApp({
         newChat(){
             if (this.newMessage.trim().length > 0) {
                let newMessage2 = {
-                    date: '10/01/2020 16:15:22',
+                    date: this.getNewData(),
                     message : this.newMessage,
                     status:'sent',
                };
@@ -189,7 +189,7 @@ createApp({
             let response;
             response= setTimeout(()=>{
                 let newMessage2={
-                    date: '10/01/2020 16:15:22',
+                    date: this.getNewData(),
                     message : 'ok',
                     status:'received',
                 };
@@ -211,6 +211,26 @@ createApp({
         deleteMessage(i){
             this.contacts[this.counter].messages.splice(i,1)
 
+        },
+        getNewData(){
+            let finalDate='';
+
+            const now = new Date();
+            finalDate+= now.getDate().toString().padStart(2,'0');
+            finalDate+='/';
+            finalDate+= (now.getMonth()+1).toString().padStart(2,'0');
+            finalDate+='/';
+            finalDate+= now.getFullYear();
+
+            finalDate+=' ';
+
+            finalDate+= now.getHours().toString().padStart(2,'0');
+            finalDate+=':';
+            finalDate+= now.getMinutes().toString().padStart(2,'0');
+            finalDate+=':';
+            finalDate+= now.getSeconds().toString().padStart(2,'0');
+
+            return finalDate;
         }
     }
   // Monto l'istanza di Vue in pagina
