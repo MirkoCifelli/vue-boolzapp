@@ -68,7 +68,7 @@
                                 
                                 <ul class="list-unstyled ">
                                     <li v-for="(item, i) in contacts" class="mb-2 d-flex" 
-                                       :class="{active :counter==i}"
+                                       :class="{active : counter == i}"
                                        @click="counter=i">
                                         <div class="row align-items-center p-1" v-if='item.visible == true'>
                                             <div class="col-2">
@@ -99,7 +99,7 @@
                             <div class="d-flex p-1 align-items-center ">
                                 <div class="p-2 img-header">
                                     <img :src="contacts[counter].avatar" 
-                                    class="rounded-circle " alt="Michele">
+                                    class="rounded-circle " :alt="contacts[counter].name">
                                 </div>
                                 <div class="p-2 img-info">
                                     <div class="fw-semibold fs-4">{{contacts[counter].name}}</div>
@@ -113,7 +113,7 @@
                             </div>
                         </div>
                         <div class="col-12 bg-special overflow-y-auto altezza pt-5">
-                            <div class="mess" v-for="(text,i) in contacts[counter].messages" :class="contacts[counter].messages[i].status=='sent' ? 'green':'white'">
+                            <div class="mess" v-for="(text,i) in contacts[counter].messages" :class="text.status=='sent' ? 'green':'white'">
                                 <div class="dropdown postition-drop btn-property">
                                     <button class=" btn btn-sm text-l-dropdown dropdown-toggle fs-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     </button>
